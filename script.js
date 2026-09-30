@@ -1,0 +1,1 @@
+const toast=document.querySelector('.toast');let timer;document.querySelectorAll('[data-product]').forEach((button)=>button.addEventListener('click',()=>{toast.textContent=`↗ เปิดแชทสอบถาม ${button.dataset.product}`;toast.classList.add('show');clearTimeout(timer);timer=setTimeout(()=>toast.classList.remove('show'),3000)}));
